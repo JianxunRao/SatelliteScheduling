@@ -17,7 +17,7 @@ class Server(BaseHTTPRequestHandler):
         post_data = self.rfile.read(content_length).decode()
         problem, instance = populationInstanceParser(post_data)
 
-        parser = XMLParser('C:\\Users\\Gasper\\Desktop\\satelliteScheduling\\' + problem)
+        parser = XMLParser(problem)
         problem = parser.getProblem()
         response = problem.evaluateSolution(instance)
 

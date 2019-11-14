@@ -5,7 +5,7 @@ import requests
 def my_function(x):
     """ Some objective function"""
     jsonDict = dict()
-    jsonDict['problem'] = 'small\\I_S_01.xml'
+    jsonDict['problem'] = './small/I_S_01.xml'
     jsonDict['schedule'] = []
     for i in range(x[0]):
         entry = {'SC': x[i + 1], 'GS': x[i + 2], 'tStart': x[i + 3], 'tDur': x[i + 4]}
