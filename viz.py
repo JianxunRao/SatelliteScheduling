@@ -93,7 +93,7 @@ if len(sys.argv)==6:
     obj4_v_scl = 15*obj4_v_scl + 3
 
     #print(obj4_v_scl)
-    ax.scatter3D(obj1_v, obj2_v, obj3_v, s=obj4_v_scl)
+    ax.scatter3D(obj1_v, obj2_v, obj3_v, c=obj4_v_scl)
     plt.gca().invert_xaxis()
     plt.gca().invert_yaxis()
     plt.gca().invert_zaxis()
