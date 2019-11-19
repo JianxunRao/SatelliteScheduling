@@ -1,7 +1,7 @@
-import sys
-import matplotlib.pyplot as plt
 import json
-from mpl_toolkits import mplot3d
+import sys
+
+import matplotlib.pyplot as plt
 import numpy as np
 
 if len(sys.argv)==4:
